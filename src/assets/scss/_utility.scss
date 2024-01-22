@@ -1,0 +1,68 @@
+.xl__heading {
+  font-size: 11rem;
+  font-weight: 900;
+  color: $primary;
+}
+.lg__heading {
+  font-size: 3rem;
+  font-weight: 600;
+  word-spacing: 2px;
+
+  span {
+    color: $primary;
+  }
+}
+
+.sm__heading {
+  font-size: 1rem;
+  font-family: $bodyFont;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-family: $bodyFont;
+  margin-bottom: 30px;
+}
+
+.more__btn {
+  width: 100px;
+  height: 100px;
+  background: $linearGradient;
+  border-radius: 50%;
+  color: $white;
+  margin-top: 5px;
+
+  svg {
+    font-size: 1.5rem;
+  }
+}
+
+.section__gap {
+  margin-bottom: 80px;
+}
+
+.banner,
+.feature {
+  .row {
+    > div {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.not__found {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+
+  button {
+    background-color: $primary;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: $white;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,19 @@
+.feature {
+  &__item {
+    padding: 15px;
+    background-color: $secondary;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+    svg {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}
