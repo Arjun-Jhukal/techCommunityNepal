@@ -6,6 +6,7 @@ export default function RoutesCollection(): JSX.Element {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/beauty" element={<LandingPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

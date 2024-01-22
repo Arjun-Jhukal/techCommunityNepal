@@ -1,11 +1,13 @@
 import { BsArrowRight } from "react-icons/bs";
+import Image from "../../atoms/Image";
+import BannerImage from "../../../assets/bannerImage.jpg";
 export default function Banner() {
   return (
     <section className="banner">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-12  order-lg-1 order-2">
-            <h1 className="lg__heading">
+          <div className="col-lg-6 col-12  order-lg-1 order-2 text-lg-start text-center ">
+            <h1 className="lg__heading ">
               We Bring <span>terrific</span> <br />
               <span> change</span> in you.
             </h1>
@@ -14,16 +16,23 @@ export default function Banner() {
               perferendis porro voluptatem quaerat voluptatibus dicta nulla dolor earum, itaque corrupti iusto reprehenderit.
             </p>
 
-            <div className="text-end">
+            <div className="text-lg-end text-center">
               <button className="more__btn">
                 <BsArrowRight />
               </button>
             </div>
           </div>
-          <div className="col-lg-6 col-12 order-lg-2 order-1">
-            <h1 className="lg__heading">
+          <div className="col-lg-6 col-12 order-lg-2 order-1 text-end">
+            {/* <h1 className="lg__heading">
               Banner <span>Image</span>
-            </h1>
+            </h1> */}
+
+            <div className="d-flex justify-content-center">
+              <div className="banner__image">
+                <Image src={BannerImage} alt="Professional Software Developer" />
+                <div className="circular__dot"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
