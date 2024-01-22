@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: $bodyFont;
+}
 ul,
 li {
   margin: 0;
@@ -25,4 +28,21 @@ h4,
 h5 {
   font-family: $headerFont;
   font-weight: 500;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  &.primary {
+    color: $primary;
+    text-transform: capitalize;
+    font-family: $bodyFont;
+  }
+}
+
+p {
+  color: #a0a0a0;
+  margin: 0;
 }

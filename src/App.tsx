@@ -1,9 +1,9 @@
-import React from "react";
+import RoutesCollection from "./routes/Routes";
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <>
-      <main className="main"></main>
+      <RoutesCollection />
     </>
   );
 }
