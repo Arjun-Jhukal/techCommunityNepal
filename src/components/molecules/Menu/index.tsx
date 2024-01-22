@@ -13,7 +13,7 @@ interface Props {
 export default function Menu(props: Props) {
   const { menuItems, activeMenu, onChange, toggleMobileMenu } = props;
 
-  const menuRef = React.useRef(null);
+  const menuRef = React.useRef<HTMLUListElement>(null);
 
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
