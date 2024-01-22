@@ -54,6 +54,11 @@
     gap: 15px;
 
     li {
+      &.active {
+        a {
+          color: $primary;
+        }
+      }
       a {
         font-family: $bodyFont;
       }
@@ -69,6 +74,16 @@
       left: 0;
       top: 0;
       background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-100%);
+      @include transition(0.3s);
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
 
       .menu__items {
         flex-direction: column;

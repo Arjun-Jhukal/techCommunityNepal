@@ -30,7 +30,7 @@
   background: $linearGradient;
   border-radius: 50%;
   color: $white;
-  margin-top: 5px;
+  margin-top: 15px;
 
   svg {
     font-size: 1.5rem;
@@ -65,4 +65,16 @@
     color: $white;
     margin-top: 15px;
   }
+}
+
+.circular__dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: $radialGradient;
+
+  position: absolute;
+  top: 30%;
+  right: 0;
+  z-index: 99;
 }
