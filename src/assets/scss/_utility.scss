@@ -25,15 +25,26 @@
 }
 
 .more__btn {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background: $linearGradient;
   border-radius: 50%;
   color: $white;
   margin-top: 15px;
+  position: relative;
 
   svg {
     font-size: 1.5rem;
+  }
+
+  span {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 14px;
+    transform-origin: 0 50px;
+    color: $white;
+    font-weight: 400;
   }
 }
 

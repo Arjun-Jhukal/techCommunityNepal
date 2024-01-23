@@ -2,6 +2,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Image from "../../atoms/Image";
 import BannerImage from "../../../assets/bannerImage.jpg";
 export default function Banner() {
+  const buttonText = "Learn More Learn More";
   return (
     <section className="banner">
       <div className="container">
@@ -18,6 +19,18 @@ export default function Banner() {
 
             <div className="text-lg-end text-center">
               <button className="more__btn">
+                {buttonText.split("").map((char, i) => {
+                  return (
+                    <span
+                      key={i}
+                      style={{
+                        transform: `rotate(${i * 17}deg)`,
+                      }}
+                    >
+                      {char}
+                    </span>
+                  );
+                })}
                 <BsArrowRight />
               </button>
             </div>
