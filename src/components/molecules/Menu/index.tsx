@@ -45,7 +45,13 @@ export default function Menu(props: Props) {
         </li>
         {menuItems.map((menuItem) => (
           <li key={menuItem.value} className={menuItem.value === activeMenu ? "active" : ""}>
-            <Link to={menuItem.link} onClick={() => onChange(menuItem.value)}>
+            <Link
+              to={menuItem.link}
+              onClick={() => {
+                onChange(menuItem.value);
+                toggleMobileMenu(false);
+              }}
+            >
               {menuItem.value}
             </Link>
           </li>
